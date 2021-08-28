@@ -1,0 +1,12 @@
+<mat-card class="news-feed-card">
+  <mat-card-header>
+    <div mat-card-avatar [style.backgroundImage]="'url('+ post?.user?.image +')'" class="example-header-image"></div>
+    <mat-card-title>{{post?.user?.name}}</mat-card-title>
+    <mat-card-subtitle>{{post?.date}}</mat-card-subtitle>
+  </mat-card-header>
+    <ng-content></ng-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
