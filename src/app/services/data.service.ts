@@ -13,9 +13,7 @@ export class DataService {
   constructor(private readonly httpClient: HttpClient) { }
 
   getAllPosts(perPage = 10, page = 0): Observable<PaginatedResponse<Array<Post>>> {
-    console.log(perPage, page)
     return this.httpClient.get('assets/data.json').pipe(
-      tap(res => console.log(res)),
       map((res: any) => {
         return {
           paginationInfo: {
