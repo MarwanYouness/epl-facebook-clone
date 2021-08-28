@@ -1,5 +1,5 @@
 <app-generic-post [post]="post">
   <mat-card-content>
-    <iframe width="560" height="315" [src]="post?.video | sanitizeURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe [src]="post?.video | sanitizeURL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </mat-card-content>
 </app-generic-post>
